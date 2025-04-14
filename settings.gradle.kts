@@ -16,14 +16,15 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/Batyrq14/ChatLib")
+            url = uri("https://maven.pkg.github.com/Batyrq14/ChatKitap")
             credentials {
-                username = "Batyrq14"
-                password = "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" // or use from `github.properties`
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
 }
+//test
 
 rootProject.name = "Lab2"
 include(":app")

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -15,6 +16,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
@@ -41,7 +45,7 @@ android {
 
 
 dependencies {
-    implementation("com.github.Batyrq14:chatlib:1.1.1")
+    implementation("com.github.Batyrq14:mylibrary:1.0.3")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

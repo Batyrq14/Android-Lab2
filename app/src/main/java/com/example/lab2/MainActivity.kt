@@ -6,8 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.lab2.databinding.ActivityMainBinding
-import com.github.Batyrq14.chatlib.ChatLibrary
-import com.example.chatlib
+import com.example.mylibrary.ChatLibrary
 import android.content.Context
 import android.content.Intent
 
